@@ -1,0 +1,34 @@
+<app-nav-bar></app-nav-bar>
+<div class="content-container">
+
+  <div class="container-fluid">
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <h3 class="listTopic">&nbsp;&nbsp;&nbsp;&nbsp;Default Members List</h3>
+      <br>
+
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Membership Number</th>
+          <th>Name</th>
+          <th>Membership Start date</th>
+          <th>Gender</th>
+          <th>Contact Number</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let member of members">
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{member.membershipNumber}}</td>
+          <td>&nbsp;&nbsp;{{member.name}}</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;{{member.startMembershipDate.day}}/{{member.startMembershipDate.month}}/{{member.startMembershipDate.year}}</td>
+          <td>&nbsp;&nbsp;{{member.gender}}</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{member.contactNum}}</td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>

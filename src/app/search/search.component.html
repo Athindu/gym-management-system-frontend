@@ -1,0 +1,53 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="content-container">
+
+  <div class="container-fluid">
+
+        <div class="jumbotron">
+      <h3 class="listTopic">&nbsp;&nbsp;&nbsp;&nbsp;Search Members</h3>
+      <br>
+      <input type="text" [(ngModel)]="membershipNumber" (input)="searchByID()" placeholder="Search by Membership ID" class="searchName" >
+      <input type="text" [(ngModel)]="name" (input)="searchByName()" placeholder="Search by Name" class="searchName" >
+      <input type="text" [(ngModel)]="gender" (input)="searchByGender()" placeholder="Search by Gender" class="searchName" >
+
+      <br><br>
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Membership Number</th>
+          <th>Name</th>
+          <th>Membership Start date</th>
+          <th>Gender</th>
+          <th>Contact Number</th>
+          <th>School Name</th>
+          <th>Grade</th>
+          <th>Guardian Name</th>
+          <th>Age</th>
+          <th>NIC No</th>
+          <th>Occupation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let member of members">
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{member.membershipNumber}}</td>
+          <td>&nbsp;&nbsp;{{member.name}}</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;{{member.startMembershipDate.day}}/{{member.startMembershipDate.month}}/{{member.startMembershipDate.year}}</td>
+          <td>&nbsp;&nbsp;{{member.gender}}</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{member.contactNum}}</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;{{member.schoolName}}</td>
+          <td>{{member.grade}}</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;{{member.guardianName}}</td>
+          <td>&nbsp;{{member.age}}</td>
+          <td>{{member.idNum}}</td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;{{member.occupation}}</td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+
+
+</div>

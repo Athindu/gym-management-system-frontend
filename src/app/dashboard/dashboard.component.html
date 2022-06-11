@@ -1,0 +1,133 @@
+<app-nav-bar></app-nav-bar>
+<br>
+<div class="content-container">
+
+  <div class="container-fluid">
+
+    <div class="jumbotron">
+      
+      <div id="page-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+                    <div class="col-lg-12">
+                        <ol class="breadcrumb">
+                            <li class="active">
+                                <i class="fa fa-bars"></i>&nbsp;&nbsp;&nbsp;Statistics
+                            </li>
+                        </ol>
+                    </div>
+          </div>
+
+            <div class="row" id="cards">
+              <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-user-circle-o fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">{{counts.fullCount}}</div>
+                                        <div class="phrase">Total Members</div>
+                                    </div>
+                                </div>
+                                <br>
+                                
+                            </div>
+                              <a routerLink="/members">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                              </a>  
+                        </div>
+              </div>
+
+
+              <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+								                  <div class="col-xs-3">
+                                        <i class="fa fa-child fa-5x"></i>
+                                  </div>
+                                  <div class="col-xs-9 text-right">
+                                        <div class="huge">{{counts.studentCount}}</div>
+                                        <div class="phrase">Student Members</div>
+                                  </div>
+                                </div>
+                                <br>
+                                
+                            </div>
+                                <a routerLink="/student">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                              </a>
+                        </div>
+              </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-purple">
+                            <div class="panel-heading">
+                                <div class="row">
+								                  <div class="col-xs-3">
+                                        <i class="fa fa-user-secret fa-5x"></i>
+                                  </div>
+                                  <div class="col-xs-9 text-right">
+                                        <div class="huge">{{counts.seniorCount}}</div>
+                                        <div class="phrase">Over 60 Members</div>
+                                  </div>
+                                </div>
+                                <br>
+                                
+                            </div>
+                                <a routerLink="/senior">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                              </a>
+                        </div>
+                </div>
+
+              <div class="col-lg-3 col-md-6">
+                  <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                              <div class="row">
+                                  <div class="col-xs-3">
+                                        <i class="fa fa-male fa-5x"></i>
+                                  </div>
+                                  <div class="col-xs-9 text-right">
+                                        <div class="huge">{{counts.defaultCount}}</div>
+                                        <div class="phrase">Default Member</div>
+                                  </div>  
+                              </div>
+                              <br>
+                              
+                            </div>
+                              <a routerLink="/default">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                    <div class="clearfix"></div>
+                                </div>
+                              </a>
+                  </div>
+              </div>
+        </div>
+
+</div>
+
+</div>
+
+    </div>
+
+  </div>
+
+</div>
